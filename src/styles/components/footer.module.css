@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--color-primary);
+  padding: 50px 0;
+  max-height: 200px;
+}
+.footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rights img {
+  margin-bottom: 15px;
+}
+
+.socials a:not(:last-of-type) {
+  margin-right: 15px;
+}

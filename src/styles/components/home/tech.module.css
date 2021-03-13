@@ -1,0 +1,49 @@
+.quemSomos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.techInfo > p {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 308px;
+}
+
+.techLangs {
+  display: flex;
+  flex-direction: row;
+}
+
+.techLangs > div {
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techLangs > div:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .quemSomos {
+    flex-direction: column !important;
+  }
+  .techLangs {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .techLangs > div {
+    margin-bottom: 15px;
+  }
+  .techLangs > div:nth-child(even) {
+    margin-right: 0 !important;
+  }
+}

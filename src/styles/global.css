@@ -1,0 +1,112 @@
+:root {
+  /* Colors: */
+  --color-secondary: #8fffff;
+  --color-primary: #1a4e89;
+  --color-white: #ffffff;
+  --color-black: #293038;
+  --color-gray: #707070;
+
+  /* Font/text values */
+  --font-family-open-sans: "Open Sans", sans-serif;
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-style-normal: normal;
+  --font-weight-normal: normal;
+  --font-weight-bold: bold;
+  --font-weight-medium: medium;
+  --font-size-12: 12px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --line-spacing-2: 2px;
+  --line-spacing-19: 19px;
+  --line-spacing-24: 24px;
+}
+
+/* Character Styles */
+.character-style-footer {
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-12);
+  line-height: var(--line-spacing-19);
+  color: var(--color-white);
+}
+.character-style-title {
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-20);
+  line-height: var(--line-spacing-24);
+  color: var(--color-black);
+}
+.character-style-nav {
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-20);
+  line-height: var(--line-spacing-2);
+  color: var(--color-black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body,
+#__next {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-16);
+  line-height: var(--line-spacing-24);
+  color: var(--color-gray);
+}
+
+header {
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  border-left: 4px solid var(--color-secondary);
+  padding-left: 12px;
+  margin-bottom: 15px;
+
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-20);
+  line-height: var(--line-spacing-24);
+  color: var(--color-black);
+}
+
+footer {
+  flex-shrink: 0;
+}

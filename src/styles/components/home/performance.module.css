@@ -1,0 +1,20 @@
+.performance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.performanceInfo > p {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 330px;
+}
+
+@media screen and (max-width: 900px) {
+  .performance {
+    flex-direction: column-reverse !important;
+  }
+}

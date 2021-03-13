@@ -1,0 +1,32 @@
+.header {
+  padding: 25px 0;
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  font-family: var(--font-family-montserrat);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-20);
+  line-height: var(--line-spacing-2);
+  color: var(--color-black);
+}
+
+.header nav a:hover {
+  padding-bottom: 10px;
+  border-bottom: 4px solid var(--color-secondary);
+}
+
+.header nav a:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .header nav {
+    display: none !important;
+  }
+}
